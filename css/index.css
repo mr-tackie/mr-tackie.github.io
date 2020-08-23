@@ -1,0 +1,206 @@
+body {
+  background-color: #151515;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Nanum Gothic", sans-serif;
+  overflow-x: hidden;
+}
+body h1 {
+  font-size: 40px;
+  font-weight: 800;
+}
+body p {
+  color: #aaaaaa;
+}
+body .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100%;
+  min-width: 100%;
+}
+body .content .about-me {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 120px 100px;
+}
+body .content .about-me h1 {
+  font-size: 80px;
+  margin-bottom: 24px;
+}
+body .content .about-me p {
+  line-height: 1.5em;
+}
+body .content .about-me a {
+  color: white;
+  font-weight: bold;
+}
+body .content .about-me .menu-items {
+  margin: 30px 0px 50px 0px;
+}
+body .content .about-me .menu-items ul {
+  list-style-type: none;
+}
+body .content .about-me .menu-items li {
+  display: inline-block;
+  margin-right: 20px;
+  text-transform: uppercase;
+}
+body .content .about-me .menu-items li a {
+  font-weight: normal;
+  text-decoration: none;
+  color: #eeeeee;
+  transition: 0.5s;
+}
+body .content .about-me .menu-items li a:hover {
+  font-weight: bold;
+}
+body .content .about-me .menu-items li .active {
+  color: white;
+  font-weight: bold;
+}
+body .content .about-me .socials {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+body .content .about-me .socials .avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 50px;
+}
+body .content .about-me .socials .icon {
+  height: 60px;
+  margin-right: 50px;
+}
+body .content .main {
+  padding-top: 50px;
+  margin-right: 30px;
+}
+body .content .main .dark-card {
+  background-color: #292929;
+  padding: 32px;
+  border-radius: 4px;
+}
+body .content .main .project-card {
+  transition: 0.3s ease-in-out;
+  margin-bottom: 16px;
+}
+body .content .main .project-card .card-subtitle {
+  color: white;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+body .content .main .project-card .card-title {
+  font-size: 32px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+body .content .main .project-card .card-content {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+body .content .main .project-card .card-footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+body .content .main .project-card:hover {
+  transform: scale(1.2);
+}
+body .content .main .project-card:hover ~ .project-card {
+  opacity: 0.1;
+}
+body .content .main #professional-skills {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+body .content .main #professional-skills .skill-set {
+  background-color: #292929;
+  border-radius: 4px;
+  padding: 16px;
+}
+body .content .main #professional-skills .skill-set h1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2em;
+  margin-bottom: 4px;
+}
+body .content .main #professional-skills .skill-set .underline {
+  height: 2px;
+  background-color: white;
+  width: 20%;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+body .content .main #professional-skills .skill-set ul {
+  list-style-type: none;
+}
+body .content .main #professional-skills .skill-set li {
+  line-height: 1.5em;
+  color: #aaaaaa;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr !important;
+  }
+
+  .about-me {
+    position: relative !important;
+    height: auto !important;
+  }
+  .about-me h1 {
+    font-size: 50px !important;
+    margin-bottom: 24px;
+  }
+
+  .menu-items {
+    display: none;
+  }
+
+  .socials {
+    margin-top: 50px;
+  }
+  .socials .avatar {
+    height: 40px !important;
+    width: 40px !important;
+    margin-right: 30px !important;
+  }
+  .socials .icon {
+    height: 40px !important;
+    margin-right: 30px !important;
+  }
+
+  .main {
+    padding-top: 0 !important;
+    margin-left: 30px;
+  }
+
+  .project-card:hover {
+    transform: scale(1.02) !important;
+  }
+}
+@media (max-width: 450px) {
+  .about-me {
+    padding: 60px 50px !important;
+  }
+
+  .main {
+    margin-left: 10px;
+    margin-right: 10px !important;
+  }
+
+  #professional-skills {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
